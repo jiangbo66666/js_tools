@@ -1,4 +1,10 @@
-// 将数字转换成货币字符串
+/**
+ * @description: 将数字转换成货币字符串
+ * @param {*} num
+ * @param {*} separate
+ * @param {*} separateLen
+ * @return {*}
+ */
 function currencyStr(num, separate =",", separateLen = 3){
   let separateNum,
     strList = []
