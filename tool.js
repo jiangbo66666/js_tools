@@ -41,8 +41,15 @@ function currencyStr(num, separate =",", separateLen = 3){
   return strList.join(separate)
 }
 
-
+// 生成指定区间的随机数
+function randomGenerate(min, max){
+  let rad
+  // max - min + 1表示会有几种可能的数字 ；*random的话会在这几种可能之间随机 ；+ min表示加上最小数到达区间
+  rad = Math.floor((Math.random()*(max-min +1)) + min);
+  return rad
+}
 
 export {
-  currencyStr
+  currencyStr,
+  randomGenerate
 }
